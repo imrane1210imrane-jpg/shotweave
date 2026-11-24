@@ -1,0 +1,16 @@
+:root{color-scheme:dark;--bg:#171818;--panel:#222323;--line:#414444;--text:#f4efe6;--muted:#c4c3ba;--gold:#f1bc76;font:16px/1.5 system-ui,sans-serif}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:radial-gradient(ellipse at top left,#362a20,transparent 62%),var(--bg);color:var(--text)}
+header{padding:1.15rem max(5%,calc((100% - 1120px)/2));border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.identity{font-size:1.2rem;font-weight:700}.identity span,.format,#source{font-size:.72rem;letter-spacing:.08em;color:var(--muted)}.identity span{margin-left:.5rem;color:var(--gold)}
+main{width:min(90%,1120px);margin:auto;padding-bottom:3rem}.hero{padding:2rem 0;display:flex;align-items:end;gap:2rem;justify-content:space-between}.hero p{max-width:30rem;margin:0 0 .4rem;color:var(--muted)}
+h1{font:normal clamp(2.7rem,6vw,5rem)/.97 Georgia,serif;margin:0;letter-spacing:-.045em}h2{margin:0 0 .7rem;font-size:1.15rem}
+.workspace{display:grid;grid-template-columns:1.25fr 1fr;gap:1rem}.panel{background:var(--panel);border:1px solid var(--line);border-radius:.85rem;padding:1.2rem}
+label,small,#status,.sample p{color:var(--muted);font-size:.9rem}textarea{display:block;width:100%;resize:vertical;margin:.45rem 0 .85rem;border:1px solid #626363;border-radius:.45rem;background:#161818;color:var(--text);padding:.75rem;font:inherit;line-height:1.6}
+.buttons,.result-head{display:flex;align-items:flex-start;gap:.6rem;flex-wrap:wrap}.result-head{justify-content:space-between}
+button{color:#201711;background:var(--gold);border:1px solid transparent;border-radius:.4rem;padding:.6rem .8rem;font:600 .9rem system-ui;cursor:pointer}
+button.secondary{color:var(--text);background:transparent;border-color:#676968}button:disabled{opacity:.5;cursor:default}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.sample{border-top:1px solid var(--line);margin-top:1rem;padding-top:.8rem}.sample p{margin:.2rem 0 .55rem}.sample button{display:block;margin-top:.8rem}input{accent-color:var(--gold)}
+ol{list-style:none;padding:0}li{padding:.8rem 0;border-top:1px solid var(--line)}li strong{color:var(--gold);font-size:.85rem}li p{margin:.25rem 0}
+@media(max-width:750px){.hero{display:block}.hero p{margin:.8rem 0 0}.workspace{grid-template-columns:1fr}.format{display:none}}

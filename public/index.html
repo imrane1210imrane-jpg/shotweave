@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shotweave | Scene continuity</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<header><div class="identity">Shotweave <span>PREPRODUCTION</span></div><div class="format">Scene continuity checklist</div></header>
+<main>
+  <section class="hero"><h1>Carry the detail<br>from beat to beat.</h1><p>Turn scene notes into a checklist for props, lighting and blocking. Keep drafts on your device, or try hybrid AI with a fictional scene.</p></section>
+  <div class="workspace">
+    <section class="panel" aria-labelledby="beats-heading">
+      <h2 id="beats-heading">Scene beats</h2>
+      <label for="beats">Enter 2–8 beats. Use one line per beat.</label>
+      <textarea id="beats" rows="9" spellcheck="false"></textarea>
+      <div class="buttons"><button id="local">Review on this device</button><button class="secondary" id="sample">Load fictional scene</button></div>
+      <div class="sample"><strong>Hybrid demo</strong><p>Only the built-in fictional scene can be sent to Firebase AI Logic if local inference is unavailable.</p><label><input id="consent" type="checkbox"> Allow cloud fallback for the fictional scene</label><button class="secondary" id="hybrid" disabled>Review fictional scene</button><button class="secondary" id="cloud" disabled>Test cloud on fictional scene</button></div>
+    </section>
+    <section class="panel results" aria-labelledby="checks-heading">
+      <div class="result-head"><h2 id="checks-heading">Continuity checks</h2><span id="source" hidden></span></div>
+      <p id="status" role="status">Run a review to generate a checklist.</p>
+      <ol id="checks"></ol>
+      <button class="secondary" id="export" hidden>Download Markdown</button>
+    </section>
+  </div>
+</main>
+<script type="module" src="./ui.mjs?v=5"></script>
+</body></html>
